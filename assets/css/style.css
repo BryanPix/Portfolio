@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   margin: 0px;
@@ -7,37 +7,115 @@
 
 body {
   font-family: "Lato", sans-serif;
+  color: #c5eff7;
+  background: #070f2b;
 }
 
-.NameLogo{
-  font-size: 1.8rem;
+.NameLogo {
+  font-size: 1.7rem;
   width: fit-content;
   cursor: pointer;
   position: relative;
+  top: 10px;
+  left: 16px;
   z-index: 10;
 }
-.logoGitHub{
-  font-size: 1.6rem;
-  color:black;
+.logoGitHub {
+  font-size: 1.7rem;
+  color: #c5eff7;
   float: right;
   position: relative;
-  top:-30px;
-  left:-10px;
+  top: -20px;
+  left: -13px;
   cursor: pointer;
   z-index: 10;
+}
+
+/* Sections */
+
+/* About Me */
+
+.sectionAboutMe {
+  margin: 3rem 1rem;
+}
+.titleAboutMe {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.paragraphAboutMe {
+  line-height: 1.5rem;
+}
+/* Projets */
+
+.titleMainSectionProject {
+  position: relative;
+  left: 1rem;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+.sectionProjet {
+  margin: 3rem 1rem;
+  width: fit-content;
+}
+.titleProject {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.sliderImage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.carouselImage {
+  display: flex;
+  width: 300%;
+  height: 200%;
+  transition: transform 0.4s ease-in-out;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #264653;
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn.prev {
+  left: 10px;
+}
+
+.btn.next {
+  right: 10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.fa-circle{
+  position:relative;
+  left:35vw;
+  margin-left: 0.5rem;
+  font-size:0.9rem;
+}
+.projetImage {
+  width: 60%;
+}
+.paragraphProject {
+  line-height: 1.5rem;
+}
+.horizontalLine {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  width: 90%;
 }
 
 /* circles animations */
 
-.area {
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  width: 100%;
-  height: 100vh;
-}
-
 .circles {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -54,9 +132,8 @@ body {
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
-  bottom: -150px;
-  border-radius:100%;
-
+  bottom: 0;
+  border-radius: 100%;
 }
 
 .circles li:nth-child(1) {
@@ -162,7 +239,12 @@ body {
   }
 
   100% {
-    transform: translateY(-1000px);
+    transform: translateY(-100vh);
     opacity: 0;
+  }
+}
+@media (max-width: 480px) {
+  .circles {
+    display: none;
   }
 }
