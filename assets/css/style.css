@@ -22,11 +22,11 @@ body {
   left: 16px;
 }
 .logoGitHub {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #c5eff7;
   float: right;
   position: relative;
-  top: -20px;
+  top: -24px;
   left: -13px;
   cursor: pointer;
 }
@@ -272,11 +272,20 @@ body {
 }
 /* large */
 @media (min-width: 933px) {
+  body{
+    font-size:1.5rem;
+  }
   .sliderImage {
     width: 35%;
   }
   .divTextProject {
     width: 60%;
+  }
+  p{
+    padding:0.5rem 0;
+  }
+  .logoGitHub{
+    font-size:3rem;
   }
 }
 /* extra large */
