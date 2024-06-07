@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Bryan Portfolio</title>
@@ -18,7 +12,7 @@
   <body>
       <nav>
         <h1 class="NameLogo">Bryan Festin</h1>
-        <!-- noopener permet à la page ouverte avec target="_blank" de ne pas avoir accès à l'objet window.opener ce qui peut causer des risques d'attaque de phishing ou de rediriger vers une URL malveillant -->
+        <!-- noopener permet à la page ouverte avec target="_blank" de ne pas avoir accès à l'objet window.opener ce qui peut causer des risques d'attaque de phishing ou de rediriger vers une URL malveillante -->
         <!-- noreferrer permet qu'aucune information sensible n'est envoyée à la nouvelle page ouverte dans l'onglet lors du target="_blank", ça permet d'empêcher à la nouvelle page ouverte de voir d'où vient le trafic se qui augmente l'anonymat de l'utilisateur et donc sa sécurité -->
         <a href="https://github.com/BryanPix" target="_blank" rel="noopener noreferrer" class="logoGitHub"><i class="fa-brands fa-github"></i></a>
       </nav>
@@ -31,83 +25,62 @@
           l'aide des méthodes Merise et Agile.
         </p>
       </section>
-
+      <!-- Projets -->
       <h2 class="titleMainSectionProject">Projets</h2>
 
       <!-- Projet 1 -->
       <section class="sectionProjet">
         <h2 class="titleProject">Banana Organizer</h2>
         <div class="sliderImage">
-          <div class="carouselImage">
+          
+          <a href="https://github.com/BryanPix/ProjetFinalAfpa" target="_blank" rel="noopener noreferrer">
+            <div class="carouselImage">
             <img src="./assets/img/Projet1_1.png" class="projetImage" alt="Page de connexion du projet Banana Organizer" />
             <img src="./assets/img/Projet1_2.png" class="projetImage" alt="Menu principal du projet Banana Organizer" />
             <img src="./assets/img/Projet1_3.png" class="projetImage" alt="To do liste du projet Banana Organizer" />
           </div>
+          </a>
           <i class="fa-solid fa-angles-left btn prev"></i>
           <i class="fa-solid fa-angles-right btn next"></i>
           <i class="fa-solid fa-circle"></i>
           <i class="fa-solid fa-circle"></i>
           <i class="fa-solid fa-circle"></i>  
       </div>
+      <div class="divTextProject">
 
         <p class="paragraphProject">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos
-          possimus aspernatur facere nostrum similique sequi? Asperiores laborum
-          nulla rem harum, perspiciatis excepturi architecto, expedita
-          laboriosam quas et placeat magnam.
+          Projet final concluant la formation de développeur web et web mobile pour le compte de l'Afpa de Saint-Étienne-du-Rouvray.
         </p>
+        <p class="paragraphProject">
+          Création d'un gestionnaire de tâches sur le court et long terme, à l'aide d'une todolist et d'un calendrier.
+        </p>
+
+        <p class="paragraphProject">
+          Ce projet utilise le stack MERN : 
+        </p>
+        <ul class="listeProjet">
+          <li>
+            MongoDB pour la base de données.
+          </li>
+          <li>
+            Express.js pour le framework backend.
+          </li>
+          <li>
+            React.js pour le framework frontend.
+          </li>
+          <li>
+            Node.js pour le serveur.
+          </li>
+        </ul>
+      </div>
         <hr class="horizontalLine" />
       </section>
 
       <!-- Projet 2 -->
-      <section class="sectionProjet">
-        <h2 class="titleProject">Banana Organizer</h2>
-        <div class="sliderImage">
-          <div class="carouselImage">
-            <img src="./assets/img/Projet1_1.png" class="projetImage" alt="Page de connexion du projet Banana Organizer" />
-            <img src="./assets/img/Projet1_2.png" class="projetImage" alt="Menu principal du projet Banana Organizer" />
-            <img src="./assets/img/Projet1_3.png" class="projetImage" alt="To do liste du projet Banana Organizer" />
-          </div>
-          <i class="fa-solid fa-angles-left btn prev"></i>
-          <i class="fa-solid fa-angles-right btn next"></i>
-          <i class="fa-solid fa-circle"></i>
-          <i class="fa-solid fa-circle"></i>
-          <i class="fa-solid fa-circle"></i>  
-        </div>
 
-        <p class="paragraphProject">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos
-          possimus aspernatur facere nostrum similique sequi? Asperiores laborum
-          nulla rem harum, perspiciatis excepturi architecto, expedita
-          laboriosam quas et placeat magnam.
-        </p>
-        <hr class="horizontalLine" />
-      </section>
 
       <!-- Projet 3 -->
-      <section class="sectionProjet">
-        <h2 class="titleProject">Banana Organizer</h2>
-        <div class="sliderImage">
-          <div class="carouselImage">
-            <img src="./assets/img/Projet1_1.png" class="projetImage" alt="Page de connexion du projet Banana Organizer" />
-            <img src="./assets/img/Projet1_2.png" class="projetImage" alt="Menu principal du projet Banana Organizer" />
-            <img src="./assets/img/Projet1_3.png" class="projetImage" alt="To do liste du projet Banana Organizer" />
-          </div>
-          <i class="fa-solid fa-angles-left btn prev"></i>
-          <i class="fa-solid fa-angles-right btn next"></i>
-          <i class="fa-solid fa-circle"></i>
-          <i class="fa-solid fa-circle"></i>
-          <i class="fa-solid fa-circle"></i>  
-        </div>
-
-        <p class="paragraphProject">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos
-          possimus aspernatur facere nostrum similique sequi? Asperiores laborum
-          nulla rem harum, perspiciatis excepturi architecto, expedita
-          laboriosam quas et placeat magnam.
-        </p>
-        <hr class="horizontalLine" />
-      </section>
+     
 
       <!-- Animation Circles -->
       <ul class="circles">

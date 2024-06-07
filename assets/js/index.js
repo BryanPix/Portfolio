@@ -26,15 +26,20 @@ document.querySelectorAll(".sliderImage").forEach(slider => {
         } else if (currentImg < 1) {
             currentImg = imgsEl.length;
         }
-        imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 90}vw)`;
+          // permet de recuperer la largeur du container pour le responsive
+          const containerWidth = imageContainerEl.offsetWidth/3;
+
+          imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * containerWidth}px)`;
 
         // Permet de changer la couleur du point pour la navigation et voir où on se trouve sur le carousel
         dots.forEach((dot, i) => {
             if (i === currentImg - 1) {
                 dot.style.color = "#a8dadc";
-                dot.style.top = "-2.6rem";
+                // Permet de résoudre problème d'alignement de points quand actif
+                dot.style.top = "-2.55rem";
             } else {
                 dot.style.color = "#264653";
+                // Permet de résoudre problème d'alignement de points quand actif
                 dot.style.top = "-2.5rem";
             }
         });
@@ -47,3 +52,4 @@ document.querySelectorAll(".sliderImage").forEach(slider => {
 
     updateImg();
 });
+

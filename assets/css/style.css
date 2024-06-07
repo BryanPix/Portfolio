@@ -4,7 +4,9 @@
   margin: 0px;
   padding: 0px;
 }
-
+*:not(.circles){
+  z-index: 10;
+}
 body {
   font-family: "Lato", sans-serif;
   color: #c5eff7;
@@ -18,7 +20,6 @@ body {
   position: relative;
   top: 10px;
   left: 16px;
-  z-index: 10;
 }
 .logoGitHub {
   font-size: 1.7rem;
@@ -28,7 +29,6 @@ body {
   top: -20px;
   left: -13px;
   cursor: pointer;
-  z-index: 10;
 }
 
 /* Sections */
@@ -94,17 +94,22 @@ body {
 .btn:hover {
   opacity: 1;
 }
-.fa-circle{
-  position:relative;
-  left:35vw;
+.fa-circle {
+  position: relative;
+  left: 35vw;
   margin-left: 0.5rem;
-  font-size:0.9rem;
+  font-size: 0.9rem;
 }
 .projetImage {
   width: 60%;
 }
 .paragraphProject {
   line-height: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.listeProjet {
+  margin-left: 1rem;
 }
 .horizontalLine {
   margin-top: 1rem;
@@ -130,7 +135,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6);
   animation: animate 25s linear infinite;
   bottom: 0;
   border-radius: 100%;
@@ -243,8 +248,28 @@ body {
     opacity: 0;
   }
 }
+@media (min-width: 370px) {
+  .sliderImage {
+    transform:translateX(-${(currentImg - 1) * 80}vw);
+  }
+}
+@media (min-width: 768px) {
+  .sliderImage {
+    width:40%;
+    height:30%;
+    float:left;
+  }
+  .fa-circle{
+    left:8.6rem;
+  }
+  .divTextProject{
+    float:right;
+    width:55%;
+  }
+}
 @media (max-width: 480px) {
   .circles {
     display: none;
   }
 }
+
