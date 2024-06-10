@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   margin: 0px;
@@ -8,9 +8,17 @@
   z-index: 10;
 }
 body {
-  font-family: "Lato", sans-serif;
-  color: #c5eff7;
-  background: #070f2b;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #e4f1fe;
+  background: rgb(30, 145, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 145, 214, 1) 0%,
+    rgba(0, 114, 187, 1) 50%,
+    rgba(143, 201, 58, 1) 100%
+  );
 }
 
 .NameLogo {
@@ -20,15 +28,22 @@ body {
   position: relative;
   top: 10px;
   left: 16px;
+  transition: 0.6s;
 }
+
 .logoGitHub {
   font-size: 2rem;
   color: #c5eff7;
   float: right;
   position: relative;
-  top: -24px;
+  top: -38px;
   left: -13px;
   cursor: pointer;
+  transition: 0.6s;
+}
+.logoGitHub:hover,
+.NameLogo:hover {
+  color: #aa1155;
 }
 
 /* Sections */
@@ -40,7 +55,7 @@ body {
 }
 .titleAboutMe {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .paragraphAboutMe {
   line-height: 1.5rem;
@@ -50,7 +65,7 @@ body {
 .titleMainSectionProject {
   position: relative;
   left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: fit-content;
 }
 .sectionProjet {
@@ -58,7 +73,7 @@ body {
   width: fit-content;
 }
 .titleProject {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .sliderImage {
@@ -76,8 +91,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #264653;
-  font-size: 20px;
+  color: black;
+  font-size: 30px;
   opacity: 0.5;
   cursor: pointer;
 }
@@ -151,7 +166,7 @@ body {
   left: 10%;
   width: 20px;
   height: 20px;
-  animation-delay: 2s;
+  animation-delay: 0.2s;
   animation-duration: 12s;
 }
 
@@ -159,14 +174,14 @@ body {
   left: 70%;
   width: 20px;
   height: 20px;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 
 .circles li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
-  animation-delay: 0s;
+  animation-delay: 0.4s;
   animation-duration: 18s;
 }
 
@@ -181,21 +196,21 @@ body {
   left: 75%;
   width: 110px;
   height: 110px;
-  animation-delay: 3s;
+  animation-delay: 0.9s;
 }
 
 .circles li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
-  animation-delay: 7s;
+  animation-delay: 0.8s;
 }
 
 .circles li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
-  animation-delay: 15s;
+  animation-delay: 3s;
   animation-duration: 45s;
 }
 
@@ -203,7 +218,7 @@ body {
   left: 60%;
   width: 80px;
   height: 80px;
-  animation-delay: 2s;
+  animation-delay: 1.4s;
   animation-duration: 30s;
 }
 
@@ -218,21 +233,21 @@ body {
   left: 55%;
   width: 60px;
   height: 60px;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
   animation-duration: 13s;
 }
 .circles li:nth-child(12) {
   left: 5%;
   width: 100px;
   height: 100px;
-  animation-delay: 9s;
+  animation-delay: 2s;
   animation-duration: 25s;
 }
 .circles li:nth-child(13) {
   left: 25%;
   width: 120px;
   height: 120px;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-duration: 11s;
 }
 
@@ -269,11 +284,14 @@ body {
     float: right;
     width: 55%;
   }
+  .titleMainSectionProject{
+    font-size: 1.7rem;
+  }
 }
 /* large */
 @media (min-width: 933px) {
-  body{
-    font-size:1.5rem;
+  body {
+    font-size: 1.1rem;
   }
   .sliderImage {
     width: 35%;
@@ -281,26 +299,32 @@ body {
   .divTextProject {
     width: 60%;
   }
-  p{
-    padding:0.5rem 0;
+  p {
+    padding: 0.5rem 0;
   }
-  .logoGitHub{
-    font-size:3rem;
+  .logoGitHub {
+    font-size: 2.5rem;
+  }
+  .titleMainSectionProject{
+    font-size: 2rem;
   }
 }
 /* extra large */
 @media (min-width: 1127px) {
   .sliderImage {
-    width: 30%;
+    width: 25%;
   }
   .divTextProject {
     width: 65%;
   }
   .horizontalLine {
-    width:80%;
+    width: 80%;
   }
   body {
     margin: 1rem;
+  }
+  .logoGitHub {
+    font-size: 3rem;
   }
 }
 
@@ -308,4 +332,28 @@ body {
   .circles {
     display: none;
   }
+}
+
+/* Scrollbar */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
