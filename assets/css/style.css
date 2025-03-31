@@ -34,7 +34,7 @@ body {
 
 .logoGitHub {
   font-size: 2rem;
-  color: #c5eff7;
+  color: white;
   float: right;
   position: relative;
   top: -38px;
@@ -44,18 +44,7 @@ body {
 }
 .logoLinkedin {
   font-size: 2rem;
-  color: #c5eff7;
-  float: right;
-  position: relative;
-  top: -38px;
-  left: -30px;
-  cursor: pointer;
-  transition: 0.6s;
-  margin-right:1rem;
-}
-.logoLinkedin {
-  font-size: 2rem;
-  color: #c5eff7;
+  color: white;
   float: right;
   position: relative;
   top: -38px;
