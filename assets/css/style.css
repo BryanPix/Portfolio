@@ -56,7 +56,7 @@ body {
 .logoLinktree {
   width:  2rem;
   height: 2rem;
-  filter: invert(90%) sepia(20%) saturate(500%) hue-rotate(180deg) brightness(110%) contrast(100%);
+  filter: invert(1) brightness(2);
   float: right;
   position: relative;
   top: -27px;
