@@ -67,7 +67,7 @@ body {
 .logoLinktree {
   width:  2rem;
   height: 2rem;
-  filter: invert(87%) sepia(10%) saturate(500%) hue-rotate(160deg) brightness(105%) contrast(95%);
+  filter: invert(90%) sepia(20%) saturate(500%) hue-rotate(180deg) brightness(110%) contrast(100%);
   float: right;
   position: relative;
   top: -27px;
@@ -76,6 +76,7 @@ body {
   transition: 0.6s;
   margin-right:1rem;
 }
+
 
 
 .logoGitHub:hover,
@@ -311,7 +312,7 @@ body {
   .logoLinktree {
     width:  1.9rem;
     height: 1.9rem;
-    top: -25px;
+    top: -28px;
   }
 }
 
